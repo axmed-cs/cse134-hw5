@@ -35,23 +35,28 @@
         <br>
         <section>
             <form action="https://httpbin.org/post" method="POST">
-                <input name="possible_bot" hidden value="true">
                 <fieldset>
                     <legend>Questions?</legend>
+
+                    <input name="possible_bot" hidden value="true">
+
                     <label for="fname">First Name *</label>
                     <input name="first_name" id="fname" list="common_names" type="text" placeholder="First Name" required>
-                    <br>
+                    
                     <label for="lname">Last Name *</label>
                     <input name="last_name" id="lname" type="text" placeholder="Last Name" required>
-                    <br>
+
                     <label for="user_email">Email *</label>
                     <input name="user_email" id="user_email" type="email" placeholder="email" required>
-                    <br>
+
                     <label for="message">Message *</label>
-                    <br>
                     <textarea name="message" id="message" maxlength="1000" placeholder="type here..." required></textarea>
-                    <br>
+
                     <button type="submit">Send</button>
+
+                    <div class="error-box">
+                        <span id="message_error"></span>
+                    </div>
                 </fieldset>
                 <datalist id="common_names">
                     <option value="John"></option>
