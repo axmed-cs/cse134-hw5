@@ -6,10 +6,13 @@ main {
     font-family: "Roboto mono";
 }
 
-input:invalid {
+input:invalid, textarea:invalid {
   box-shadow: 0 0 5px 1px red;
 }
 
+input:focus:invalid, textarea:focus:invalid {
+  box-shadow: none;
+}
 
 /* Small screens (phones) */
 @media (max-width: 600px) {
