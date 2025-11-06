@@ -1,6 +1,12 @@
 @import url(navbar.css);
 @import url(global.css);
 
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+
 /* Small screens (phones) */
 @media (max-width: 600px) {
     form {
