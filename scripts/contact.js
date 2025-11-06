@@ -13,7 +13,7 @@ email.addEventListener("input", (event) => {
 
 
 fname.addEventListener("input", (event) => {
-    if (fname.validity.typeMismatch) {
+    if (fname.validity.patternMismatch) {
         errorMsg.textContent = "Please enter valid characters for your first name.";
         errorMsg.classList = "hidden";
         event.preventDefault();

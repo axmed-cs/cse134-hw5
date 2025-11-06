@@ -14,7 +14,7 @@ input:focus:invalid, textarea:focus:invalid {
   box-shadow: none;
 }
 
-input {
+input, textarea {
     display: block;
 }
 
