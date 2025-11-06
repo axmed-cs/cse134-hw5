@@ -16,6 +16,7 @@ fname.addEventListener("input", (event) => {
     if (fname.validity.typeMismatch) {
         errorMsg.textContent = "Please enter valid characters for your first name.";
         errorMsg.classList = "hidden";
+        event.preventDefault();
     }
     else {
         errorMsg.textContent = "";
