@@ -14,6 +14,10 @@ input:focus:invalid, textarea:focus:invalid {
   box-shadow: none;
 }
 
+input {
+    display: block;
+}
+
 /* Small screens (phones) */
 @media (max-width: 600px) {
     form {
