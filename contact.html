@@ -34,17 +34,18 @@
     
         <br>
         <section>
-            <form action="" method="post">
+            <form action="https://httpbin.org/" method="post">
+                <input name="possible_bot" hidden>Hello</input>
                 <fieldset>
                     <legend>Questions?</legend>
                     <label for="fname">First Name</label>
                     <input id="fname" list="common_names" type="text" placeholder="First Name">
                     <br>
-                    <label for="fname">Last Name</label>
-                    <input type="text" placeholder="Last Name">
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text" placeholder="Last Name">
                     <br>
-                    <label for="fname">Email</label>
-                    <input type="email" placeholder="email">
+                    <label for="user_email">Email</label>
+                    <input id="user_email" type="email" placeholder="email">
                     <br>
                     <label for="message">Message</label>
                     <br>
