@@ -22,7 +22,7 @@
     <main>
         <hgroup>
             <h1>Contact?</h1>
-            <p>If you want to have any questions for me then feel free to fill out the <span>form</span> below.</p>
+            <p>If you want - feel free to fill out the <span>form</span> below.</p>
         </hgroup>
         
         <details>
@@ -41,25 +41,21 @@
                     <input name="possible_bot" hidden value="true">
                     
                     <label for="fname">First Name *</label>
+                    <input name="first_name" id="fname" list="common_names" type="text" placeholder="First Name" required pattern="^[A-Za-z]+(?:[ '-][A-Za-z]+)*$">
                     <br>
-                    <input name="first_name" id="fname" list="common_names" type="text" placeholder="First Name" required>
-                    
                     <label for="lname">Last Name *</label>
+                    <input name="last_name" id="lname" type="text" placeholder="Last Name" required pattern="^[A-Za-z]+(?:[ '-][A-Za-z]+)*$"> 
                     <br>
-                    <input name="last_name" id="lname" type="text" placeholder="Last Name" required>
-
                     <label for="user_email">Email *</label>
-                    <br>
                     <input name="user_email" id="user_email" type="email" placeholder="email" required>
-
-                    <label for="message">Message *</label>
                     <br>
+                    <label for="message">Message *</label>
                     <textarea name="message" id="message" maxlength="1000" placeholder="type here..." required></textarea>
-
+                    <br>
                     <button type="submit">Send</button>
-
+                    <br>
                     <div class="error-box">
-                        <span id="message_error"></span>
+                        <span id="errorMsg"></span>
                     </div>
                 </fieldset>
                 <datalist id="common_names">
