@@ -1,7 +1,7 @@
-const email = document.querySelector('user_email');
-const fname = document.querySelector('fname');
-const errorMsg = document.querySelector('errorMsg');
-const form = document.querySelector('form');
+const email = document.getElementById('user_email');
+const fname = document.getElementById('fname');
+const errorMsg = document.getElementById('errorMsg');
+const form = document.getElementById('form');
 
 email.addEventListener("input", (event) => {
     if (email.validity.typeMismatch) {
@@ -20,13 +20,18 @@ fname.addEventListener("input", (event) => {
     }
     else {
         errorMsg.textContent = "";
+        errorMsg.classList.add('hidden');
     }
 });
 
 form.addEventListener("submit", (event) => {
-    if (fname.validity.patternMismatch){
+    if (!form.checkValidity()) {
+        
         event.preventDefault();
-        errorMsg.textContent = "Please enter valid characters for your first name.";
-        errorMsg.classList.remove('hidden');
+
+        if (fname.validity.patternMismatch){
+            errorMsg.textContent = "Please enter valid characters for your first name.";
+            errorMsg.classList.remove('hidden');
+        }  
     }
 });
