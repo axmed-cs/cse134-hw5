@@ -26,6 +26,10 @@ input, textarea {
     opacity: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Small screens (phones) */
 @media (max-width: 600px) {
     form {

@@ -23,8 +23,10 @@ fname.addEventListener("input", (event) => {
     }
 });
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
     if (fname.validity.patternMismatch){
         event.preventDefault();
+        errorMsg.textContent = "Please enter valid characters for your first name.";
+        errorMsg.classList.remove('hidden');
     }
 });
