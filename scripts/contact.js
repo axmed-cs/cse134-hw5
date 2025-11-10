@@ -20,7 +20,7 @@ fname.addEventListener("input", (event) => {
     }
     else {
         errorMsg.textContent = "";
-        errorMsg.classList.add('hidden');
+        //errorMsg.classList.add('hidden');
     }
 });
 
