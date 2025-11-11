@@ -3,7 +3,7 @@ const toggle_circle = document.querySelector('.theme-circle');
 const body = document.querySelector('body');
 
 
-const mode = JSON.parse(localStorage.getItem('mode')); 
+const mode = localStorage.getItem('mode'); 
 
 if (mode == 'dark'){
     body.classList.add('dark');
