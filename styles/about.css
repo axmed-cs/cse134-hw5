@@ -1,6 +1,10 @@
 @import url(navbar.css);
 @import url(global.css);
 
+body.dark tr {
+    color: var(--text-color);
+}
+
 /* Small screens (phones) */
 @media (max-width: 600px) {
     main {

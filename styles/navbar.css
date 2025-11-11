@@ -8,6 +8,37 @@ nav ul li {
     margin: 1rem;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    position: relative;
+    width: 2rem;
+    height: 1rem;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.theme-circle {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: gray;
+    border-radius: 25%;
+    transition: transform 0.4s ease;
+}
+
+.theme-circle.dark {
+    transform:translateX(100%);
+    background-color: yellow;
+}
+
+
 /* Small screens (phones) */
 @media (max-width: 600px) {
     header nav ul li{

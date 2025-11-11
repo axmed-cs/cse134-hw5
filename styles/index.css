@@ -27,6 +27,10 @@ aside:hover {
     background-color: rgb(241, 110, 110);
 }
 
+body.dark aside:hover {
+    background-color: blueviolet;
+}
+
 main {
     font-family: "Roboto mono";
 }

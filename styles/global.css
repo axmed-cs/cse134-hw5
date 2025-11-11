@@ -1,10 +1,24 @@
 :root {
     --background-color: aliceblue;
+    --text-color: black;
+    --dark-background-color: rgb(40, 62, 82);
+    --dark-text-color: white;
 }
 
 body {
     background-color: var(--background-color, aliceblue);
+    color: var(--text-color);
 }
+
+body.dark {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+body.dark a {
+    color: var(--dark-text-color);
+}
+
 
 /* Small screens (phones) */
 @media (max-width: 600px) {
